@@ -1,0 +1,24 @@
+{
+  "name": "codetrail",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@12.10.1",
+  "scripts": {
+    "bootstrap": "pnpm install --frozen-lockfile",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "lint": "oxlint --config .oxlintrc.json .",
+    "preview": "pnpm --filter @codetrail/dashboard preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck"
+  },
+  "devDependencies": {
+    "oxlint": "^1.87.0",
+    "prettier": "^3.9.9",
+    "turbo": "^2.11.7"
+  }
+}

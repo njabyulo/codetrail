@@ -1,0 +1,27 @@
+[tools]
+node = "26.11.1"
+pnpm = "12.10.1"
+
+[tasks.bootstrap]
+description = "Install workspace dependencies from the lockfile"
+run = "pnpm bootstrap"
+
+[tasks.dev]
+description = "Start implemented workspace apps"
+run = "pnpm dev"
+
+[tasks.check]
+description = "Check formatting, Oxlint, and types"
+run = "pnpm check"
+
+[tasks.test]
+description = "Run workspace tests"
+run = "pnpm test"
+
+[tasks.build]
+description = "Build implemented workspaces"
+run = "pnpm build"
+
+[tasks.preview]
+description = "Preview the built dashboard"
+run = "pnpm preview"
